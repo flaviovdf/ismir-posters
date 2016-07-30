@@ -24,7 +24,9 @@ def get_probability_a_to_a(pa_z, a):
 def main():
     test_fpath = 'data/poster-listening-trajs/z_vecs.tsv'
     df = pd.read_csv(test_fpath, sep='\t', index_col=0, header=0)
-    print(df)
+    #17 is actuallty gene 18 on the paper
+    pa = get_probability_a_to_a(df.loc[17], 'Britney Spears')
+    print(pa.sort_values()[::-1])
 
 if __name__ == '__main__':
     main()
