@@ -22,10 +22,17 @@ def get_probability_a_to_a(pa_z, a):
     return probs
 
 def main():
-    test_fpath = 'data/poster-listening-trajs/z_vecs.tsv'
+    #Example for the pop paper
+    test_fpath = 'data/poster-listening-trajs/ProbO_Given_Z.dat'
     df = pd.read_csv(test_fpath, sep='\t', index_col=0, header=0)
     #17 is actuallty gene 18 on the paper
-    pa = get_probability_a_to_a(df.loc[17], 'Britney Spears')
+    pa = get_probability_a_to_a(df.iloc[17], 'Britney Spears')
+    print(pa.sort_values()[::-1])
+    
+    #Example for the jazz paper
+    test_fpath = 'data/poster-jazz-trajs/ProbO_Given_Z.dat'
+    df = pd.read_csv(test_fpath, sep='\t', index_col=0, header=0)
+    pa = get_probability_a_to_a(df.iloc[29], 'Miles Davis')
     print(pa.sort_values()[::-1])
 
 if __name__ == '__main__':
