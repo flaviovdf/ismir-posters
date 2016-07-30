@@ -35,5 +35,9 @@ def main():
     pa = get_probability_a_to_a(df.iloc[29], 'Miles Davis')
     print(pa.sort_values()[::-1])
 
+    #One hint is to look only at probabilities above uniform random chance.
+    pa = pa[pa > 1.0 / len(pa)]
+    print(pa.sort_values()[::-1])
+
 if __name__ == '__main__':
     main()
