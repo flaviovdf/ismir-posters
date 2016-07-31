@@ -4,12 +4,12 @@ Leia-me mucho
   1. Data is in `data/`. Here, we have datasets to reproduce most of
       the results from the papers:
       
-      Mining Online Music Listening Trajectories
+      [Mining Online Music Listening Trajectories](aaa)
       
       and 
       
-      Exploring the Latent Structure of Collaborations in Music Recordings:
-      A Case Study in Jazz 
+      [Exploring the Latent Structure of Collaborations in Music Recordings:
+      A Case Study in Jazz](bbb) 
       
       The former is on the `poster-listening-trajs` folder, the later on the
       `poster-jazz-trajs`.
