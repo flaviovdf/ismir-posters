@@ -8,7 +8,7 @@ Leia-me mucho
       
       and 
       
-      [Exploring the Latent Structure of Collaborations in Music Recordings: A Case Study in Jazz](https://flaviovdf.github.io/papers/figueiredo2016-www.pdf) 
+      [Exploring the Latent Structure of Collaborations in Music Recordings: A Case Study in Jazz](https://flaviovdf.github.io/papers/andrade2016-jazz.pdf) 
       
       The former is on the `poster-listening-trajs` folder, the later on the
       `poster-jazz-trajs`.
