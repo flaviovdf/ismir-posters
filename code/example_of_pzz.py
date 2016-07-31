@@ -4,6 +4,7 @@ import sys
 import pandas as pd
 
 def main():
+    # [ToNaza] This is point 4 from Slack
     #Example for the pop paper
     test_fpath = 'data/poster-listening-trajs/ZtoZMatColToRow.dat'
     df = pd.read_csv(test_fpath, sep='\t', index_col=0, header=0)

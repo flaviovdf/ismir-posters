@@ -1,5 +1,6 @@
 #-*- coding: utf8
 
+import numpy as np 
 import sys
 import pandas as pd
 
@@ -22,6 +23,7 @@ def get_probability_a_to_a(pa_z, a):
     return probs
 
 def main():
+    # [ToNaza] This is point 3 from Slack
     #Example for the pop paper
     test_fpath = 'data/poster-listening-trajs/ProbO_Given_Z.dat'
     df = pd.read_csv(test_fpath, sep='\t', index_col=0, header=0)
@@ -29,6 +31,7 @@ def main():
     pa = get_probability_a_to_a(df.iloc[17], 'Britney Spears')
     print(pa.sort_values()[::-1])
     
+    # [ToNaza] This is point 3 from Slack again
     #Example for the jazz paper
     test_fpath = 'data/poster-jazz-trajs/ProbO_Given_Z.dat'
     df = pd.read_csv(test_fpath, sep='\t', index_col=0, header=0)
@@ -38,6 +41,16 @@ def main():
     #One hint is to look only at probabilities above uniform random chance.
     pa = pa[pa > 1.0 / len(pa)]
     print(pa.sort_values()[::-1])
+    
+    # [ToNaza] This is point 1 from Slack
+    #We can also look at probs for a given user
+    test_user_fpath = 'data/poster-jazz-trajs/ProbZ_Given_U.dat'
+    df_az = pd.read_csv(test_fpath, sep='\t', index_col=0, header=0)
+    df_zu = pd.read_csv(test_user_fpath, sep='\t', index_col=0, header=0)
+    p_zu = df_zu.loc['Chick Corea'] #chick corea row
+    p_au = p_zu.dot(df_az) 
+    print(p_au.sort_values()[::-1])
+    
 
 if __name__ == '__main__':
     main()
