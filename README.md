@@ -1,6 +1,9 @@
 Leia-me mucho
 -------------
 
+Some example code used in the ISMIR 2016 presentations.
+
+
   1. Data is in `data/`. Here, we have datasets to reproduce most of
       the results from the papers:
       
