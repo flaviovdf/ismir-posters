@@ -20,7 +20,7 @@ prob_ztoa$topic = reorder(as.factor(prob_ztoa$topic), -prob_ztoa$entropy)
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
   
-  updateSelectizeInput(session, 'topic', choices = prob_ztoa$topic, server = TRUE)
+  updateSelectizeInput(session, 'topic', choices = as.character(prob_ztoa$topic), server = TRUE)
   
   output$environmentTable <- renderFormattable({
     prob_ztoa %>% 
