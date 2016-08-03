@@ -32,16 +32,16 @@ create_probabilitiesdf = function(summariesdf,
                                   label_user = "collaborator") {
   library(reshape2)
   library(dplyr, warn.conflicts = F)
-  u = summaries %>% 
+  u = summariesdf %>% 
     melt(id.vars = "topic", measure.vars = paste0("TopUser_", 0:9), 
          variable.name = "type", value.name = "node")
-  o = summaries %>% 
+  o = summariesdf %>% 
     melt(id.vars = "topic", measure.vars = paste0("TopObj_", 0:9), 
          variable.name = "type", value.name = "node")
-  p_zu = summaries %>% 
+  p_zu = summariesdf %>% 
     melt(id.vars = "topic", measure.vars = paste0("Pzu_", 0:9), 
          variable.name = "where", value.name = "probability")
-  p_zo = summaries %>% 
+  p_zo = summariesdf %>% 
     melt(id.vars = "topic", measure.vars = paste0("Poz_", 0:9), 
          variable.name = "where", value.name = "probability")
   answer = rbind(u, o)

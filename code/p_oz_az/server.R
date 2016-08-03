@@ -1,5 +1,7 @@
 library(shiny)
 library(formattable)
+library(readr)
+library(dplyr)
 source("d3-networking.R")
 
 summaries <- read_delim("SummaryMachineReadable.dat", 
