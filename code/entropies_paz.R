@@ -1,10 +1,13 @@
 library(ggplot2)
 source("d3-networking.R")
 
-summaries <- read_delim("../data/poster-jazz-trajs/SummaryMachineReadable.dat", 
+summaries <- read_delim("../data/poster-jazz-trajs/SummaryMachineReadableNew.dat",
                         delim = "\t")
-entropies = read_delim("../data/poster-jazz-trajs/EntropyZ.dat", 
-                       col_names = F,
+names(summaries)[1] = "topic"
+summaries$topic = as.numeric(substr(summaries$topic, 3, 5))
+
+entropies = read_delim("../data/poster-jazz-trajs/EntropyAZ.dat",
+                       col_names = T,
                        delim = "\t")
 names(entropies) = c("environment", "entropy")
 entropies$topic = 0:29
@@ -32,37 +35,36 @@ plot_entropy_poz = function(data, topic_index){
     ggplot(aes(x = reorder(node, probability), y = probability)) + 
     facet_grid(topic ~ ., scales = "free_x") + 
     geom_bar(stat = "identity") +
+    ylim(0, 0.2) + 
+    xlab("Artist") + 
     coord_flip() %>% 
     return()
 }
 
-plot_entropy_poz(prob_ztoa, 0)
-plot_entropy_poz(prob_ztoa, 10)
-plot_entropy_poz(prob_ztoa, 27)
+savePlot = function(plot, filename){
+  pdf(filename, width = 6, height = 4)
+  print(plot)
+  dev.off()
+}
 
-# POUCO ENTRÓPICOS
+# Most entropic is obscure
+# plot_entropy_poz(prob_ztoa, 13)
+# Good examples:
+p1 = plot_entropy_poz(prob_ztoa, 5)
+savePlot(p1, "entropic-1.pdf")
+p2 = plot_entropy_poz(prob_ztoa, 3)
+savePlot(p2, "entropic-2.pdf")
 
-plot_entropy_poz(prob_ztoa, 18)
-plot_entropy_poz(prob_ztoa, 20)
-plot_entropy_poz(prob_ztoa, 1)
-plot_entropy_poz(prob_ztoa, 26)
-plot_entropy_poz(prob_ztoa, 5)
-plot_entropy_poz(prob_ztoa, 3)
+# least entropic:
+#plot_entropy_poz(prob_ztoa, 6)
+p4 = plot_entropy_poz(prob_ztoa, 14)
+savePlot(p4, "notentropic-1.pdf")
+p3 = plot_entropy_poz(prob_ztoa, 7)
+savePlot(p3, "notentropic-2.pdf")
+#plot_entropy_poz(prob_ztoa, 21)
 
-
-## OBJETOS
-
-prob_ztoa %>% 
-  filter(grepl("TopObj", type)) %>% 
-  ggplot(aes(x = reorder(node, probability), y = probability)) + 
-  facet_wrap(~topic, scales = "free_x") + 
-  geom_bar(stat = "identity")
-
-
-## TABELAS
-
-library(formattable)
-prob_ztoa %>% 
-  filter(topic == 0, grepl("TopObj", type)) %>% 
-  select(node, probability) %>% 
-  formattable(list(area(col = probability) ~ normalize_bar("pink", 0.25)))
+# prob_ztoa %>% 
+#   filter(grepl("TopObj", type)) %>% 
+#   ggplot(aes(x = reorder(node, probability), y = probability)) + 
+#   facet_wrap(~topic, scales = "free_x") + 
+#   geom_bar(stat = "identity")
