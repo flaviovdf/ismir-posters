@@ -14,6 +14,8 @@ prob_ztoa = create_probabilitiesdf(summaries)
 nodes = make_nodesdf(ztoz)
 links = make_linksdf(ztoz, nodes)
 
+nodes[nodes$index %in% c(5, 13, 28),]$group = 2
+
 ##################
 # Server logic   #
 ##################

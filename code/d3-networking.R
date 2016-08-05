@@ -1,7 +1,7 @@
 
 make_nodesdf = function(ztoz_df){
   #' Creates df with nodes info for networkD3
-  nodesdf = data_frame(id = ztoz$X)
+  nodesdf = data_frame(id = ztoz_df$X)
   nodesdf$index = 0:(NROW(nodesdf)-1)
   nodesdf$group = 1
   return(nodesdf)
@@ -25,30 +25,4 @@ make_linksdf = function(ztoz, nodesdf, threshold = 1/40){
     select(index.x, index.y, prob) %>% 
     rename(source = index.x, target = index.y, value = prob)
   return(links)
-}
-
-create_probabilitiesdf = function(summariesdf,
-                                  label_artists = "artist",
-                                  label_user = "collaborator") {
-  library(reshape2)
-  library(dplyr, warn.conflicts = F)
-  u = summariesdf %>% 
-    melt(id.vars = "topic", measure.vars = paste0("TopUser_", 0:9), 
-         variable.name = "type", value.name = "node")
-  o = summariesdf %>% 
-    melt(id.vars = "topic", measure.vars = paste0("TopObj_", 0:9), 
-         variable.name = "type", value.name = "node")
-  p_zu = summariesdf %>% 
-    melt(id.vars = "topic", measure.vars = paste0("Pzu_", 0:9), 
-         variable.name = "where", value.name = "probability")
-  p_zo = summariesdf %>% 
-    melt(id.vars = "topic", measure.vars = paste0("Poz_", 0:9), 
-         variable.name = "where", value.name = "probability")
-  answer = rbind(u, o)
-  answer$probability = c(p_zu$probability, p_zo$probability)
-  # answer$connection = 
-  #   x = answer$type %>% 
-  #   as.character() %>% 
-  #   strsplit("_", fixed = TRUE)
-  return(answer)
 }

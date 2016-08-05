@@ -1,7 +1,7 @@
 library(readr)
 library(dplyr, warn.conflicts = F)
 
-collaborations = read_csv("/Users/nazareno/Dropbox/ismir-data/Paper-Collab/jazz/ready-to-model.csv", col_names = TRUE)
+collaborations = read_csv("~/Dropbox/ismir-data/Paper-Collab/jazz/ready-to-model.csv", col_names = TRUE)
 collaborations = collaborations[-1,]
 
 names(collaborations) = c("collab_id", 
@@ -13,6 +13,8 @@ names(collaborations) = c("collab_id",
                           "album", 
                           "tags")
 
+# Added piano in the regex
+# A known bug in the paper is that it omitted piano
 collaborations = collaborations[grepl(
   "bass|guitar|drum|vocal|voic|percuss|keyboard|trumpet|sax|saxophon|trombon|flute|synthes|piano",
   tolower(collaborations$collaboration)

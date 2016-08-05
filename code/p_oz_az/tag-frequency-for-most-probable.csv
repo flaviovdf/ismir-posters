@@ -1,0 +1,639 @@
+tag,Freq,topic
+Big Band,25,0
+Bop,66,0
+Bossa Nova,325,0
+Bossanova,25,0
+Contemporary Jazz,333,0
+Cool Jazz,67,0
+Easy Listening,106,0
+Free Jazz,7,0
+Fusion,831,0
+Hard Bop,349,0
+Jazz,543,0
+Jazz-Funk,999,0
+Jazz-Rock,76,0
+Latin Jazz,120,0
+Modal,35,0
+Post Bop,349,0
+Smooth Jazz,577,0
+Soul-Jazz,475,0
+Swing,23,0
+Avant-garde Jazz,9,1
+Avantgarde,29,1
+Big Band,37,1
+Contemporary Jazz,467,1
+Free Improvisation,198,1
+Free Jazz,277,1
+Fusion,43,1
+Jazz,131,1
+Jazz-Rock,9,1
+Modal,9,1
+Post Bop,28,1
+Swing,239,1
+Avant-garde Jazz,24,2
+Big Band,1645,2
+Bop,276,2
+Contemporary Jazz,434,2
+Cool Jazz,142,2
+Easy Listening,83,2
+Free Improvisation,11,2
+Free Jazz,39,2
+Fusion,231,2
+Hard Bop,107,2
+Jazz,665,2
+Jazz-Funk,138,2
+Jazz-Rock,34,2
+Latin Jazz,16,2
+Modal,45,2
+Poetry,6,2
+Post Bop,131,2
+Smooth Jazz,48,2
+Soul-Jazz,7,2
+Soundtrack,14,2
+Swing,234,2
+Vocal,8,2
+Afro-Cuban Jazz,8,3
+Avant-garde Jazz,16,3
+Big Band,213,3
+Contemporary Jazz,271,3
+Free Improvisation,818,3
+Free Jazz,761,3
+Jazz,70,3
+Jazz-Rock,14,3
+Modal,1,3
+Afro-Cuban Jazz,171,4
+Avant-garde Jazz,39,4
+Big Band,5415,4
+Bop,924,4
+Bossa Nova,55,4
+Contemporary Jazz,444,4
+Cool Jazz,1737,4
+Easy Listening,142,4
+Free Jazz,19,4
+Fusion,248,4
+Hard Bop,183,4
+Jazz,1187,4
+Jazz-Funk,225,4
+Jazz-Rock,58,4
+Latin Jazz,144,4
+Modal,83,4
+Post Bop,182,4
+Smooth Jazz,103,4
+Soul-Jazz,118,4
+Space-Age,130,4
+Swing,1519,4
+Vocal,238,4
+Abstract,4,5
+Afrobeat,2,5
+Avant-garde Jazz,197,5
+Avantgarde,8,5
+Big Band,131,5
+Bop,14,5
+Contemporary Jazz,1316,5
+Easy Listening,15,5
+Experimental,4,5
+Free Improvisation,806,5
+Free Jazz,1504,5
+Fusion,6,5
+Hard Bop,11,5
+Jazz,65,5
+Modern,1,5
+Modern Classical,1,5
+Noise,3,5
+Post Bop,75,5
+Soul-Jazz,11,5
+Space-Age,3,5
+Swing,2,5
+Vocal,4,5
+Afro-Cuban Jazz,39,6
+Big Band,4556,6
+Bop,335,6
+Bossa Nova,30,6
+Cape Jazz,3,6
+Contemporary Jazz,137,6
+Cool Jazz,168,6
+Dixieland,646,6
+Easy Listening,252,6
+Free Improvisation,49,6
+Free Jazz,2,6
+Fusion,121,6
+Gospel,134,6
+Hard Bop,52,6
+Instrumental,36,6
+Jazz,2788,6
+Jazz-Funk,85,6
+Jazz-Rock,28,6
+Latin Jazz,85,6
+Modal,2,6
+Post Bop,352,6
+Ragtime,15,6
+Religious,22,6
+Smooth Jazz,11,6
+Soul-Jazz,34,6
+Swing,3849,6
+Vocal,400,6
+Afro-Cuban Jazz,25,7
+Big Band,3259,7
+Bop,606,7
+Bossa Nova,41,7
+Contemporary Jazz,94,7
+Cool Jazz,193,7
+Dixieland,1106,7
+East Coast Blues,8,7
+Easy Listening,257,7
+Free Improvisation,21,7
+Fusion,3,7
+Gospel,30,7
+Hard Bop,12,7
+Instrumental,15,7
+Jazz,2733,7
+Jazz-Funk,2,7
+Jump Blues,8,7
+Latin Jazz,30,7
+Post Bop,144,7
+Ragtime,38,7
+Smooth Jazz,14,7
+Soul-Jazz,26,7
+Swing,4328,7
+Vocal,433,7
+Avant-garde Jazz,22,8
+Avantgarde,2,8
+Big Band,313,8
+Bop,2780,8
+Bossa Nova,280,8
+Contemporary Jazz,540,8
+Cool Jazz,3258,8
+Dixieland,5,8
+Easy Listening,90,8
+Experimental,8,8
+Free Improvisation,36,8
+Free Jazz,163,8
+Fusion,1012,8
+Gypsy Jazz,764,8
+Hard Bop,1249,8
+Jazz,1654,8
+Jazz-Funk,304,8
+Jazz-Rock,260,8
+Latin Jazz,195,8
+Modal,802,8
+Post Bop,682,8
+Smooth Jazz,57,8
+Soul-Jazz,9,8
+Space-Age,1,8
+Swing,762,8
+Vocal,21,8
+Avant-garde Jazz,35,9
+Big Band,826,9
+Bop,66,9
+Bossa Nova,3,9
+Contemporary Jazz,434,9
+Cool Jazz,86,9
+Easy Listening,60,9
+Free Jazz,31,9
+Fusion,152,9
+Hard Bop,15,9
+Jazz,190,9
+Jazz-Funk,127,9
+Jazz-Rock,87,9
+Latin Jazz,51,9
+Modal,49,9
+Post Bop,21,9
+Smooth Jazz,19,9
+Soul-Jazz,134,9
+Swing,51,9
+Acid Jazz,2,10
+Avant-garde Jazz,55,10
+Avantgarde,16,10
+Big Band,3041,10
+Bop,2486,10
+Bossa Nova,289,10
+Contemporary Jazz,619,10
+Cool Jazz,1900,10
+Easy Listening,139,10
+Experimental,8,10
+Free Improvisation,42,10
+Free Jazz,232,10
+Fusion,1099,10
+Hard Bop,1719,10
+Instrumental,4,10
+Jazz,1611,10
+Jazz-Funk,489,10
+Jazz-Rock,275,10
+Latin Jazz,293,10
+Modal,689,10
+Post Bop,1544,10
+Rhythm & Blues,25,10
+Smooth Jazz,56,10
+Soul-Jazz,557,10
+Swing,1684,10
+Vocal,4,10
+Afro-Cuban Jazz,18,11
+Big Band,29,11
+Bop,19,11
+Bossa Nova,92,11
+Contemporary Jazz,495,11
+Cool Jazz,12,11
+Easy Listening,147,11
+Free Improvisation,1,11
+Free Jazz,49,11
+Fusion,1483,11
+Hard Bop,18,11
+Jazz,383,11
+Jazz-Funk,839,11
+Jazz-Rock,637,11
+Latin Jazz,201,11
+Modal,46,11
+Neo-Classical,1,11
+Post Bop,61,11
+Smooth Jazz,1021,11
+Soul-Jazz,101,11
+Swing,29,11
+Avant-garde Jazz,79,12
+Big Band,6070,12
+Bop,249,12
+Bossa Nova,20,12
+Contemporary Jazz,463,12
+Cool Jazz,337,12
+Easy Listening,91,12
+Free Jazz,19,12
+Fusion,313,12
+Hard Bop,27,12
+Jazz,790,12
+Jazz-Funk,326,12
+Jazz-Rock,101,12
+Latin Jazz,104,12
+Modal,7,12
+Post Bop,137,12
+Smooth Jazz,9,12
+Soul-Jazz,142,12
+Space-Age,55,12
+Swing,1406,12
+Vocal,174,12
+Abstract,4,13
+Afrobeat,25,13
+Ambient,1,13
+Avant-garde Jazz,150,13
+Avantgarde,26,13
+Big Band,35,13
+Bop,14,13
+Contemporary Jazz,1457,13
+Cool Jazz,7,13
+Easy Listening,15,13
+Experimental,4,13
+Free Funk,11,13
+Free Improvisation,539,13
+Free Jazz,1077,13
+Fusion,27,13
+Future Jazz,8,13
+Hard Bop,2,13
+Jazz,79,13
+Jazz-Funk,59,13
+Modal,2,13
+Modern,1,13
+Modern Classical,1,13
+Noise,3,13
+Post Bop,52,13
+Soul-Jazz,2,13
+Space-Age,3,13
+Swing,2,13
+Vocal,7,13
+Afro-Cuban Jazz,25,14
+Big Band,3681,14
+Bop,988,14
+Bossa Nova,62,14
+Contemporary Jazz,86,14
+Cool Jazz,458,14
+Dixieland,12,14
+Easy Listening,257,14
+Free Improvisation,4,14
+Free Jazz,3,14
+Fusion,3,14
+Hard Bop,98,14
+Instrumental,4,14
+Jazz,2666,14
+Jazz-Funk,2,14
+Latin Jazz,5,14
+Modal,2,14
+Post Bop,80,14
+Smooth Jazz,8,14
+Soul-Jazz,116,14
+Swing,4485,14
+Theme,17,14
+Vocal,733,14
+Big Band,1163,15
+Bop,18,15
+Bossa Nova,4,15
+Contemporary Jazz,233,15
+Cool Jazz,19,15
+Easy Listening,231,15
+Fusion,4,15
+Hard Bop,22,15
+Jazz,185,15
+Post Bop,121,15
+Smooth Jazz,216,15
+Soul-Jazz,47,15
+Swing,236,15
+Vocal,29,15
+Afro-Cuban Jazz,115,16
+Ambient,3,16
+Avant-garde Jazz,43,16
+Avantgarde,68,16
+Big Band,524,16
+Bop,1434,16
+Bossa Nova,4,16
+Contemporary Jazz,1004,16
+Cool Jazz,613,16
+Disco,25,16
+Dixieland,29,16
+Easy Listening,22,16
+Experimental,11,16
+Free Improvisation,86,16
+Free Jazz,350,16
+Funk,3,16
+Fusion,1711,16
+Hard Bop,2023,16
+Instrumental,8,16
+Jazz,828,16
+Jazz-Funk,542,16
+Jazz-Rock,447,16
+Latin Jazz,102,16
+Modal,855,16
+Post Bop,873,16
+Smooth Jazz,12,16
+Soul-Jazz,34,16
+Soundtrack,5,16
+Space-Age,3,16
+Swing,30,16
+Afrobeat,11,17
+Avant-garde Jazz,1,17
+Big Band,965,17
+Bop,30,17
+Contemporary Jazz,283,17
+Cool Jazz,6,17
+Easy Listening,55,17
+Experimental,18,17
+Free Improvisation,86,17
+Free Jazz,40,17
+Fusion,8,17
+Gypsy Jazz,104,17
+Hard Bop,3,17
+Jazz,357,17
+Jazz-Funk,6,17
+Jazz-Rock,81,17
+Latin Jazz,18,17
+Modal,18,17
+Post Bop,48,17
+Smooth Jazz,14,17
+Soul-Jazz,77,17
+Swing,171,17
+Bossa Nova,139,18
+Contemporary Jazz,108,18
+Easy Listening,11,18
+Fusion,172,18
+Jazz,15,18
+Jazz-Funk,87,18
+Jazz-Rock,63,18
+Latin Jazz,42,18
+Modal,25,18
+Soul-Jazz,23,18
+Afro-Cuban Jazz,46,19
+Avant-garde Jazz,59,19
+Avantgarde,14,19
+Big Band,2965,19
+Bop,1702,19
+Bossa Nova,4,19
+Cape Jazz,3,19
+Contemporary Jazz,424,19
+Cool Jazz,723,19
+Easy Listening,42,19
+Experimental,8,19
+Free Improvisation,68,19
+Free Jazz,193,19
+Fusion,972,19
+Gospel,116,19
+Hard Bop,1667,19
+Instrumental,21,19
+Jazz,1797,19
+Jazz-Funk,309,19
+Jazz-Rock,251,19
+Latin Jazz,2,19
+Modal,754,19
+Post Bop,1653,19
+Religious,22,19
+Soul-Jazz,95,19
+Swing,1765,19
+Vocal,123,19
+Avant-garde Jazz,18,20
+Avantgarde,16,20
+Big Band,67,20
+Bop,228,20
+Bossa Nova,73,20
+Contemporary Jazz,777,20
+Cool Jazz,741,20
+Easy Listening,4,20
+Free Improvisation,119,20
+Free Jazz,231,20
+Fusion,74,20
+Hard Bop,112,20
+Jazz,341,20
+Jazz-Funk,14,20
+Jazz-Rock,19,20
+Latin Jazz,72,20
+Modal,82,20
+Post Bop,69,20
+Smooth Jazz,74,20
+Soul-Jazz,22,20
+Space-Age,38,20
+Swing,48,20
+Vocal,21,20
+Big Band,5114,21
+Bop,2339,21
+Bossa Nova,16,21
+Contemporary Jazz,89,21
+Cool Jazz,307,21
+Dixieland,9,21
+Easy Listening,337,21
+Free Improvisation,3,21
+Free Jazz,19,21
+Fusion,23,21
+Hard Bop,20,21
+Instrumental,14,21
+Jazz,595,21
+Jazz-Funk,72,21
+Latin Jazz,93,21
+Post Bop,44,21
+Ragtime,154,21
+Smooth Jazz,48,21
+Soul-Jazz,121,21
+Swing,3755,21
+Vocal,350,21
+Afro-Cuban Jazz,38,22
+Avant-garde Jazz,92,22
+Big Band,246,22
+Bop,75,22
+Bossa Nova,61,22
+Contemporary Jazz,285,22
+Cool Jazz,46,22
+Dixieland,171,22
+Easy Listening,39,22
+Free Improvisation,19,22
+Free Jazz,94,22
+Fusion,147,22
+Hard Bop,81,22
+Jazz,374,22
+Jazz-Funk,199,22
+Jazz-Rock,104,22
+Latin Jazz,44,22
+Modal,59,22
+Post Bop,117,22
+Ragtime,31,22
+Smooth Jazz,95,22
+Soul-Jazz,7,22
+Swing,191,22
+Vocal,20,22
+Big Band,1044,23
+Bop,5,23
+Contemporary Jazz,581,23
+Cool Jazz,26,23
+Jazz,230,23
+Jazz-Funk,13,23
+Latin Jazz,17,23
+Post Bop,82,23
+Soul-Jazz,16,23
+Swing,81,23
+Ballad,1,24
+Big Band,3449,24
+Bop,58,24
+Calypso,4,24
+Contemporary Jazz,4,24
+Cool Jazz,51,24
+Dixieland,670,24
+Easy Listening,145,24
+Free Improvisation,21,24
+Gospel,7,24
+Instrumental,60,24
+Jazz,1174,24
+Ragtime,234,24
+Smooth Jazz,8,24
+Swing,4219,24
+Vocal,118,24
+Avant-garde Jazz,55,25
+Big Band,159,25
+Bop,9,25
+Bossa Nova,22,25
+Contemporary Jazz,406,25
+Easy Listening,19,25
+Electric Blues,4,25
+Free Improvisation,6,25
+Free Jazz,51,25
+Fusion,103,25
+Gypsy Jazz,4,25
+Jazz,139,25
+Jazz-Funk,26,25
+Jazz-Rock,69,25
+Jazzdance,4,25
+Latin Jazz,13,25
+Pop Rock,4,25
+Post Bop,13,25
+Smooth Jazz,31,25
+Soul-Jazz,10,25
+Swing,13,25
+Vocal,14,25
+Avant-garde Jazz,16,26
+Avantgarde,6,26
+Big Band,319,26
+Bop,137,26
+Contemporary Jazz,344,26
+Cool Jazz,115,26
+Easy Listening,22,26
+Experimental,23,26
+Free Jazz,44,26
+Fusion,58,26
+Future Jazz,5,26
+Hard Bop,18,26
+Instrumental,17,26
+Jazz,591,26
+Jazz-Funk,19,26
+Jazz-Rock,22,26
+Latin Jazz,17,26
+Modal,127,26
+Post Bop,98,26
+Soul-Jazz,12,26
+Space-Age,18,26
+Vocal,7,26
+Afro-Cuban Jazz,433,27
+Afrobeat,14,27
+Avant-garde Jazz,19,27
+Avantgarde,2,27
+Big Band,2070,27
+Bop,6984,27
+Bossa Nova,298,27
+Contemporary Jazz,357,27
+Cool Jazz,1398,27
+Dixieland,9,27
+Easy Listening,202,27
+Experimental,8,27
+Free Improvisation,25,27
+Free Jazz,148,27
+Fusion,983,27
+Hard Bop,1564,27
+Jazz,1387,27
+Jazz-Funk,338,27
+Jazz-Rock,251,27
+Latin Jazz,371,27
+Modal,703,27
+Post Bop,613,27
+Soul-Jazz,33,27
+Swing,473,27
+Vocal,60,27
+Abstract,2,28
+Avant-garde Jazz,686,28
+Avantgarde,98,28
+Big Band,368,28
+Bop,133,28
+Contemporary Jazz,1030,28
+Experimental,17,28
+Free Improvisation,873,28
+Free Jazz,4136,28
+Fusion,24,28
+Hard Bop,161,28
+Jazz,221,28
+Jazz-Funk,33,28
+Jazz-Rock,26,28
+Leftfield,12,28
+Modal,65,28
+Modern,1,28
+Poetry,2,28
+Post Bop,171,28
+Psychedelic Rock,10,28
+Soul-Jazz,138,28
+Space-Age,1028,28
+Swing,92,28
+Vocal,4,28
+Acid Jazz,2,29
+Afro-Cuban Jazz,83,29
+Avant-garde Jazz,124,29
+Avantgarde,20,29
+Big Band,435,29
+Bop,2753,29
+Bossa Nova,4,29
+Contemporary Jazz,524,29
+Cool Jazz,812,29
+Easy Listening,21,29
+Experimental,8,29
+Free Improvisation,115,29
+Free Jazz,653,29
+Fusion,1067,29
+Hard Bop,4604,29
+Jazz,1478,29
+Jazz-Funk,569,29
+Jazz-Rock,275,29
+Latin Jazz,7,29
+Modal,1164,29
+Post Bop,1995,29
+Rhythm & Blues,25,29
+Smooth Jazz,41,29
+Soul-Jazz,401,29
+Soundtrack,5,29
+Swing,86,29
+Vocal,13,29
