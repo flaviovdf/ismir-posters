@@ -11,7 +11,7 @@ make_linksdf = function(ztoz, nodesdf, threshold = 1/40){
   #' Creates a data frame with links based on node index as 
   #' required by networkD3
   library(dplyr, warn.conflicts = F)
-  library(tidyr)
+  library(tidyr, warn.conflicts = F)
   zzl = gather(ztoz, X, prob) 
   names(zzl) = c("from", "to", "prob")
   

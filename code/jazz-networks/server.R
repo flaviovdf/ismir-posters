@@ -1,20 +1,28 @@
 library(shiny)
 library(networkD3)
-library(reshape2)
 library(readr)
 library(dplyr, warn.conflicts = F)
-source("../d3-networking.R")
+source("environments-lib.R")
+source("d3-networking.R")
 
-ztoz <-read.delim("../../data/poster-jazz-trajs/ZtoZMatColToRow.dat",
+# TODO : highlight collaborators who "moved"
+
+########
+# Init #
+########
+ztoz <-read.delim("ZtoZMatColToRow.dat",
                   stringsAsFactors = FALSE)
-summaries <- read_delim("../../data/poster-jazz-trajs/SummaryMachineReadable.dat", 
-                        delim = "\t")
+prob_ztoa = read_delim("SummaryMachineReadableNew.dat", delim = "\t") %>% 
+  create_pztoa()
 
-prob_ztoa = create_probabilitiesdf(summaries)
 nodes = make_nodesdf(ztoz)
-links = make_linksdf(ztoz, nodes)
+links = make_linksdf(ztoz, nodes, 1/20)
 
-nodes[nodes$index %in% c(5, 13, 28),]$group = 2
+#nodes[nodes$index %in% c(5, 13, 28),]$group = 2
+
+nodes = left_join(nodes, get_environment_labels(), 
+                  by = c("index" = "topic"))
+nodes$label = sprintf("%s (%s)", nodes$label, nodes$id)
 
 ##################
 # Server logic   #
@@ -22,9 +30,18 @@ nodes[nodes$index %in% c(5, 13, 28),]$group = 2
 shinyServer(function(input, output) {
   
   output$z_network <- renderForceNetwork({
-    forceNetwork(Links = links, Nodes = nodes, Source = "source",
-                 Target = "target", Value = "value", NodeID = "id", 
-                 Group = "group", opacity = 0.8, zoom = TRUE)
+    fn = forceNetwork(
+      Links = links,
+      Nodes = nodes,
+      Source = "source",
+      Target = "target",
+      Value = "value",
+      NodeID = "label",
+      Group = "group",
+      opacity = 0.8,
+      fontFamily = "sans-serif",
+      fontSize = 21,
+      zoom = TRUE)
+    fn
   })
-  
 })

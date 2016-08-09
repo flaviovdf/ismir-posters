@@ -1,0 +1,92 @@
+---
+title: "A network of folks"
+output: html_document
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+library(ggplot2)
+library(readr)
+library(dplyr, warn.conflicts = FALSE)
+library(Rtsne)
+library(ggfortify, quietly = TRUE)
+theme_set(theme_bw())
+library(reshape2)
+library(cluster)
+library(networkD3)
+library(countrycode)
+
+# ----------------
+# READ
+# ----------------
+metadata = read_csv("data/metadata.csv")
+features = read_delim("data/features.csv", 
+                      delim = " ", 
+                      col_names = F)
+
+metadata$Outlier = metadata$Distance > 1000
+metadata$region = countrycode(metadata$Country, "country.name", "region")
+
+# 1-30 : rythm
+# -60 : melody
+# -90 : timbre
+# -120 : harmony
+names(features) = c(paste0("rythm", 1:30), 
+                    paste0("melody", 1:30), 
+                    paste0("timbre", 1:30), 
+                    paste0("harmony", 1:30))
+
+
+dists = daisy(features)
+distsm = as.matrix(dists)
+distsm = as.data.frame(distsm)
+distsm$id = row.names(distsm)
+
+pairwise = distsm %>% 
+  melt(id.vars = "id") %>% 
+  filter(id != variable) %>% 
+  group_by(id) %>% 
+  arrange(value) %>%
+  slice(1) # TOP most similar!
+names(pairwise) = c("from", "to", "distance")
+
+pairwise %>% 
+  ggplot(aes(x = distance)) + 
+  geom_freqpoly()
+
+# ----------------
+# NETWORK
+# ----------------
+make_nodesdf = function(ztoz_df){
+  #' Creates df with nodes info for networkD3
+  nodesdf = data_frame(id = unique(pairwise$from))
+  nodesdf$index = 0:(NROW(nodesdf)-1)
+  
+  return(nodesdf)
+}
+
+nodes = make_nodesdf(pairwise)
+metadata$id = as.character(1:NROW(metadata))
+nodes = left_join(nodes, metadata) %>% rename(group = region)
+p = ungroup(pairwise) %>% 
+  left_join(nodes, by = c("from" = "id")) %>% 
+  rename(from_index = index) %>% 
+  left_join(nodes, by = c("to" = "id")) %>% 
+  rename(to_index = index)
+known = paste(p$from, p$to)
+p = p %>% 
+  filter(!(paste(to, from) %in% known))
+
+nodes$tooltip = paste0(nodes$Country, ", ", nodes$Year, " (", nodes$CatalogNumber, ")")
+```
+
+```{r, include= FALSE}
+fn = forceNetwork(Links = p, Nodes = nodes, Source = "from_index",
+             Target = "to_index", Value = "distance", NodeID = "tooltip", 
+             fontFamily = "sans-serif", Group = "group", opacity = 0.8, zoom = TRUE, linkColour = "lightgrey", 
+             fontSize = 21)
+fn$x$nodes = left_join(fn$x$nodes, metadata, by = c("name" = "CatalogNumber"))
+fn$x$options$clickAction = 'new Audio(d.SampleAudio).play()'
+fn
+
+```
+
